@@ -7,7 +7,6 @@ class Middleware
     public const MAP = [
         "guest" => Guest::class,
         "auth" => Auth::class,
-        "usertype" => UserType::class,
     ];
 
     public static function resolve($key)

@@ -1,13 +1,11 @@
 <?php
     namespace Core;
-
-    use Core\Middleware\Guest;
-    use Core\Middleware\Auth;
     use Core\Middleware\Middleware;
 
     class Router
     {
         protected $routes = [];
+        protected $currentRoute;
 
         public function add($method, $uri, $controller)
         {

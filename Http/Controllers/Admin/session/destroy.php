@@ -2,8 +2,6 @@
 
 use Core\Authenticator;
 
-$auth = new Authenticator();
-$auth->logout();
+(new Authenticator())->logout();
 
-header("Location: /admin/login");
-exit();
+redirect("/admin/login");

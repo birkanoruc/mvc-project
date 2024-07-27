@@ -1,6 +1,6 @@
 <?php
 
-    /** View */
-    view("index.view.php",[
-        "heading" => "Home"
-    ]);
+/** View */
+view("index.view.php",[
+    "heading" => "Home",
+]);

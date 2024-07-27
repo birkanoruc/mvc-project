@@ -1,10 +1,10 @@
 <?php
 
-    use Core\Authenticator;
+use Core\Authenticator;
 
-    $auth = new Authenticator();
-    $auth->logout();
+$auth = new Authenticator();
+$auth->logout();
 
-    /** Redirect */
-    header("Location: /");
-    exit();
+/** Redirect */
+header("Location: /");
+exit();

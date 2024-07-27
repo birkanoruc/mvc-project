@@ -66,6 +66,10 @@ class ComposerStaticInit7dd92d55ed94440a37681a1f8a1456ca
         array (
             'NunoMaduro\\Collision\\' => 21,
         ),
+        'M' => 
+        array (
+            'Models\\' => 7,
+        ),
         'J' => 
         array (
             'Jean85\\' => 7,
@@ -98,8 +102,8 @@ class ComposerStaticInit7dd92d55ed94440a37681a1f8a1456ca
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Whoops\\' => 
         array (
@@ -192,6 +196,10 @@ class ComposerStaticInit7dd92d55ed94440a37681a1f8a1456ca
         'NunoMaduro\\Collision\\' => 
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
+        ),
+        'Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Models',
         ),
         'Jean85\\' => 
         array (

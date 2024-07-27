@@ -45,3 +45,10 @@
     {
        return Core\Session::get("old")[$key] ?? $default;
     }
+    
+    if (!function_exists('class_basename')) {
+        function class_basename($class)
+        {
+            return basename(str_replace('\\', '/', $class));
+        }
+    }

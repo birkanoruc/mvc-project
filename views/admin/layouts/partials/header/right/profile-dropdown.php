@@ -23,10 +23,12 @@
                     <li class="dropdown-item">
                         <a href="#" class="d-flex w-100"><i class="fe fe-user fs-18 me-2 text-primary"></i>Profile</a>
                     </li>
-
+                    <form method="POST" action="/admin/logout" id="logoutForm">
                     <li class="dropdown-item">
-                        <a href="#" class="d-flex w-100"><i class="fe fe-info fs-18 me-2 text-primary"></i>Log Out</a>
+                        <input type="hidden" name="_method" value="DELETE">
+                        <a href="#" class="d-flex w-100" onclick="document.getElementById('logoutForm').submit(); return false;">Log out</a>
                     </li>
+                    </form>
                 </ul>
             </div>
             <!-- End::header-element -->
