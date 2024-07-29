@@ -21,13 +21,10 @@ $router->get("/login","session/create.php")->only("guest");
 $router->post("/login","session/store.php")->only("guest");
 $router->delete("/logout", "session/destroy.php")->only("auth");
 
-/** ADMIN */
-$router->get("/admin/", "Admin/index.php")->only("auth");
+/** Admin Pages */
+$router->get("/admin/", "Admin/index.php")->only("auth")->only("admin");
 
-/** Login Page */
+/** Authentication Pages */
 $router->get("/admin/login", "Admin/session/create.php")->only("guest");
 $router->post("/admin/login", "Admin/session/store.php")->only("guest");
-$router->delete("/admin/logout", "Admin/session/destroy.php")->only("auth");
-
-/** Logout Action */
-$router->delete("/admin/logout", "Admin/session/destroy.php");
+$router->delete("/admin/logout", "Admin/session/destroy.php")->only("auth")->only("admin");
